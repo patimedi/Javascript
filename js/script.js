@@ -1,34 +1,26 @@
-let respuestaSecreta = 'Blanquita';
-let pregunta = 'Nombre de tu primer mascota'
+//Se pide nombre para sucribirse a membresía
 
-if (pregunta) {
+let nombre = prompt('Ingresá tu nombre');
 
-    let opciones = prompt (' Posibles preguntas: \n1 - Pelicula favorita \n2 - Nombre de tu primer mascosta \n3 - Cual fue tu primer escuela')
 
-    switch (opciones) {
-        case 1:
-            alert ('respuesta incorrecta')
-            break;
+let opciones = prompt('¿Querés suscrbirte para recibir un descuento en tu membresía?: \n1 - Sí \n2 - No')
+let membresiaPromocion = ('Descuento del 10% hasta el 31 de julio');
+
     
-        case 2:
-            break;
-        
-        case 3:
-            alert ('respuesta incorrecta')
-            break;
-        }
-}
+switch (opciones) {
+    case '1':
+        prompt('ingresa tu mail')
+        alert('El descuento es del 10% hasta el 31 de julio')
 
-
-for (let i = 2; i >= 0; i--) {
-    let respuestaUsuario = prompt('Elegí tu respuesta secreta. Tenés ' + (i + 1) + ' oportunidades')
-    if (respuestaUsuario === respuestaSecreta) {
-        alert('¡Respuesta correcta!');
+        const resta = function (precioNormal, descuento) { return 1100 - 110 }
+        alert('el precio con descuento es ' + resta(1100 - 110) + ' ¡Gracias!')
         break;
-    }
-    else {
-        alert('contrseña incorrecta, te quedan ' + i + ' oportunidades')
-    }
+    case '2':
+        alert('Gracias por tu respuesta, te esperamos pronto')
+        break;
 }
 
-// No se como escribir que luego de los 3 intentos fallitdos se bloquea el usuario.
+//costos
+
+let precioNormal = 1100;
+let descuento = 110; // 10% de descuento
