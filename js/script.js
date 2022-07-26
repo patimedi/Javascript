@@ -11,17 +11,18 @@ switch (opciones) {
     case '1':
         prompt('ingresa tu mail')
         alert('El descuento es del 10% hasta el 31 de julio')
-
-        const resta = function (precioNormal, descuento) { return 1100 - 110 }
-        alert('el precio con descuento es ' + resta(1100 - 110) + ' ¡Gracias!')
         break;
-        // acá me hubiese gustado poner si la compra se realiza antes del 31 de julio entonces el precio es con 10% de descuento pero si es despues de esa fecha el precio es el precio normal
     case '2':
         alert('Gracias por tu respuesta, te esperamos pronto')
         break;
 }
 
-//costos
+const resta = function (precioNormal, descuento) { return precioNormal - descuento} //Puse el parseInt en varios lugares y en el alert me sigue arrojando NaN
+alert('el precio con descuento es ' + resta(1100 - 110) + ' ¡Gracias!')
 
+//costos
 let precioNormal = 1100;
 let descuento = 110; // 10% de descuento
+
+//Array de noticias pagas para los sucriptores de la membresía
+const noticiasPagas = [Noticia1, Noticia2, Noticia3, Noticia4, Noticia5, Noticia6, Noticia7, Noticia8, Noticia9, Noticia10, Noticia11, Noticia12]
