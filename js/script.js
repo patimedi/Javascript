@@ -17,7 +17,7 @@ switch (opciones) {
         break;
 }
 
-const resta = function (precioNormal, descuento) { return precioNormal - descuento} //Puse el parseInt en varios lugares y en el alert me sigue arrojando NaN
+const resta = function (precioNormal, descuento) { return precioNormal - descuento } //Puse el parseInt en varios lugares y en el alert me sigue arrojando NaN
 alert('el precio con descuento es ' + resta(1100 - 110) + ' ¡Gracias!')
 
 //costos
@@ -25,4 +25,71 @@ let precioNormal = 1100;
 let descuento = 110; // 10% de descuento
 
 //Array de noticias pagas para los sucriptores de la membresía
-const noticiasPagas = [Noticia1, Noticia2, Noticia3, Noticia4, Noticia5, Noticia6, Noticia7, Noticia8, Noticia9, Noticia10, Noticia11, Noticia12]
+const noticiasPagas = [{
+
+    nombre: 'noticia1',
+    fecha: 'Enero'
+},
+    {
+    nombre: 'noticia2',
+    fecha: 'Febrero'
+},
+{
+    nombre: 'noticia3',
+    fecha: 'Marzo'
+},
+{
+    nombre: 'noticia4',
+    fecha: 'Abril'
+},
+{
+    nombre: 'noticia5',
+    fecha: 'Mayo'
+},
+{
+    nombre: 'noticia6',
+    fecha: 'Junio'
+},
+{
+    nombre: 'noticia7',
+    fecha: 'Julio'
+},
+{
+    nombre: 'noticia8',
+    fecha: 'Agosto'
+},
+{
+    nombre: 'noticia9',
+    fecha: 'Setiembre'
+},
+{
+    nombre: 'noticia10',
+    fecha: 'Octubre'
+},
+{
+    nombre: 'noticia11',
+    fecha: 'Noviembre'
+},
+{
+    nombre: 'noticia12',
+    fecha: 'Diciembre'
+},
+]
+
+find()
+
+const buscar = noticiasPagas.find ((noticia)=> noticia.nombre == 'noticia8');
+
+console.log(buscar);
+
+filter()
+
+let fecha = prompt('Buscar por fecha');
+const filtrar = noticiasPagas.filter ((noticia) => noticia.fecha.includes(fecha));
+
+console.log(filtrar);
+//no me sale el prompt ni en la consola 
+
+
+
+
