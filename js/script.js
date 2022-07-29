@@ -4,7 +4,7 @@ let nombre = prompt('Ingresá tu nombre');
 
 
 let opciones = prompt('¿Querés suscrbirte para recibir un descuento en tu membresía?: \n1 - Sí \n2 - No')
-let membresiaPromocion = ('Descuento del 10% hasta el 31 de julio');
+
 
 
 switch (opciones) {
@@ -17,8 +17,8 @@ switch (opciones) {
         break;
 }
 
-const resta = function (precioNormal, descuento) { return precioNormal - descuento } //Puse el parseInt en varios lugares y en el alert me sigue arrojando NaN
-alert('el precio con descuento es ' + resta(1100 - 110) + ' ¡Gracias!')
+const resta = function (precioNormal, descuento) { return precioNormal - descuento }
+alert('el precio con descuento es ' + resta(1100,110) + ' ¡Gracias!')
 
 //costos
 let precioNormal = 1100;
@@ -76,13 +76,11 @@ const noticiasPagas = [{
 },
 ]
 
-find()
 
 const buscar = noticiasPagas.find ((noticia)=> noticia.nombre == 'noticia8');
 
 console.log(buscar);
 
-filter()
 
 let fecha = prompt('Buscar por fecha');
 const filtrar = noticiasPagas.filter ((noticia) => noticia.fecha.includes(fecha));
